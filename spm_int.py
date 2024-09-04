@@ -21,7 +21,6 @@ def mpass_dialog():
                 break
             entered_hashmpass = hashlib.sha256(enter_mpass.encode("utf-8")).hexdigest()
             entered_hashmpass = entered_hashmpass
-            print(entered_hashmpass)
             if entered_hashmpass == stored_mpass:
                 messagebox.showinfo("Access Granted!", "Welcome!")
                 break
